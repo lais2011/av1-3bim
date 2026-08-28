@@ -1,0 +1,173 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f4f8fb;
+    color: #17324d;
+}
+
+.navbar {
+    background-color: #102f4a;
+    padding: 18px 0;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+}
+
+.nav-link {
+    margin-left: 15px;
+}
+
+.nav-link:hover {
+    color: #a9d7ee !important;
+}
+
+.banner {
+    background-color: #dceef7;
+    padding: 70px 0;
+}
+
+.banner h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+
+.banner p {
+    line-height: 1.7;
+}
+
+.subtitulo {
+    color: #4b89a9;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.imagem-banner {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.btn-principal {
+    background-color: #286889;
+    color: white;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+.btn-principal:hover {
+    background-color: #173f58;
+    color: white;
+}
+
+.destaques {
+    padding: 70px 0;
+}
+
+.destaques h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(23, 50, 77, 0.10);
+}
+
+.card img {
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-body {
+    padding: 25px;
+}
+
+.card h2,
+.card h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+.card p {
+    color: #5d6d78;
+    line-height: 1.6;
+}
+
+.card a {
+    color: #286889;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.sobre {
+    background-color: white;
+    padding: 70px 0;
+}
+
+.sobre img {
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.sobre h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+}
+
+.titulo-pagina {
+    background-color: #dceef7;
+    padding: 55px 0;
+}
+
+.titulo-pagina h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+}
+
+.pagina-conteudo {
+    padding: 60px 0;
+}
+
+.imagem-historia {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.ano {
+    color: #286889;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #102f4a;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+
+    .banner h1 {
+        font-size: 40px;
+    }
+
+    .imagem-banner {
+        margin-top: 30px;
+    }
+
+    .nav-link {
+        margin-left: 0;
+    }
+
+}
