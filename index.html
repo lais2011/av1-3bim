@@ -1,228 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <title>Olimpíadas de Inverno</title>
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark">
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
+          <a class="navbar-brand" href="index.html"> Olimpíadas de Inverno </a>
 
-            <a class="navbar-brand" href="index.html">
-                Olimpíadas de Inverno
-            </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Início</a>
+              </li>
 
-            <div class="collapse navbar-collapse" id="menu">
+              <li class="nav-item">
+                <a class="nav-link" href="esportes.html">Esportes</a>
+              </li>
 
-                <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="historia.html">História</a>
+              </li>
 
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Início</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="esportes.html">Esportes</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="historia.html">História</a>
-                    </li>
-
-                </ul>
-
-            </div>
+              <li class="nav-item">
+                <a class="nav-link" href="curiosidades.html">Curiosidades</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<main>
-
-    <section class="banner">
-
+    <main>
+      <section class="banner">
         <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <p class="subtitulo">ESPORTE • NEVE • GELO</p>
 
-            <div class="row align-items-center">
+              <h1>Olimpíadas de Inverno</h1>
 
-                <div class="col-md-6">
+              <p>
+                Conheça um pouco sobre os Jogos Olímpicos de Inverno, seus
+                esportes e sua história.
+              </p>
 
-                    <p class="subtitulo">ESPORTE • NEVE • GELO</p>
-
-                    <h1>
-                        Olimpíadas de Inverno
-                    </h1>
-
-                    <p>
-                        Conheça um pouco sobre os Jogos Olímpicos
-                        de Inverno, seus esportes e sua história.
-                    </p>
-
-                    <a href="esportes.html" class="btn btn-principal">
-                        Conheça os esportes
-                    </a>
-
-                </div>
-
-                <div class="col-md-6">
-
-                    <img src="imagens/capa.jpg"
-                         class="img-fluid imagem-banner"
-                         alt="Olimpíadas de Inverno">
-
-                </div>
-
+              <a href="esportes.html" class="btn btn-principal">
+                Conheça os esportes
+              </a>
             </div>
 
+            <div class="col-md-6">
+              <img
+                src="imagens/capa.jpg"
+                class="img-fluid imagem-banner"
+                alt="Olimpíadas de Inverno"
+              />
+            </div>
+          </div>
         </div>
+      </section>
 
-    </section>
-
-    <section class="container destaques">
-
+      <section class="container destaques">
         <p class="subtitulo">DESTAQUES</p>
 
         <h2>Principais esportes</h2>
 
         <div class="row g-4 mt-3">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="imagens/esqui.jpg" class="card-img-top" alt="Esqui" />
 
-            <div class="col-md-4">
+              <div class="card-body">
+                <h3>Esqui</h3>
 
-                <div class="card">
+                <p>
+                  Um dos esportes mais tradicionais das Olimpíadas de Inverno.
+                </p>
 
-                    <img src="imagens/esqui.jpg"
-                         class="card-img-top"
-                         alt="Esqui">
-
-                    <div class="card-body">
-
-                        <h3>Esqui</h3>
-
-                        <p>
-                            Um dos esportes mais tradicionais
-                            das Olimpíadas de Inverno.
-                        </p>
-
-                        <a href="esportes.html">Saiba mais →</a>
-
-                    </div>
-
-                </div>
-
+                <a href="esportes.html">Saiba mais →</a>
+              </div>
             </div>
+          </div>
 
-            <div class="col-md-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="imagens/snowboard.jpg"
+                class="card-img-top"
+                alt="Snowboard"
+              />
 
-                <div class="card">
+              <div class="card-body">
+                <h3>Snowboard</h3>
 
-                    <img src="imagens/snowboard.jpg"
-                         class="card-img-top"
-                         alt="Snowboard">
+                <p>Esporte praticado sobre uma prancha na neve.</p>
 
-                    <div class="card-body">
-
-                        <h3>Snowboard</h3>
-
-                        <p>
-                            Esporte praticado sobre uma prancha
-                            na neve.
-                        </p>
-
-                        <a href="esportes.html">Saiba mais →</a>
-
-                    </div>
-
-                </div>
-
+                <a href="esportes.html">Saiba mais →</a>
+              </div>
             </div>
+          </div>
 
-            <div class="col-md-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="imagens/patinacao.jpg"
+                class="card-img-top"
+                alt="Patinação no gelo"
+              />
 
-                <div class="card">
+              <div class="card-body">
+                <h3>Patinação</h3>
 
-                    <img src="imagens/patinacao.jpg"
-                         class="card-img-top"
-                         alt="Patinação no gelo">
+                <p>Esporte praticado sobre o gelo em diferentes modalidades.</p>
 
-                    <div class="card-body">
-
-                        <h3>Patinação</h3>
-
-                        <p>
-                            Esporte praticado sobre o gelo
-                            em diferentes modalidades.
-                        </p>
-
-                        <a href="esportes.html">Saiba mais →</a>
-
-                    </div>
-
-                </div>
-
+                <a href="esportes.html">Saiba mais →</a>
+              </div>
             </div>
-
+          </div>
         </div>
+      </section>
 
-    </section>
-
-    <section class="sobre">
-
+      <section class="sobre">
         <div class="container">
-
-            <div class="row align-items-center">
-
-                <div class="col-md-6">
-
-                    <img src="imagens/hoquei.jpg"
-                         class="img-fluid"
-                         alt="Hóquei no gelo">
-
-                </div>
-
-                <div class="col-md-6">
-
-                    <p class="subtitulo">SOBRE OS JOGOS</p>
-
-                    <h2>Uma grande competição</h2>
-
-                    <p>
-                        Os Jogos Olímpicos de Inverno reúnem atletas
-                        de vários países em esportes praticados
-                        principalmente na neve e no gelo.
-                    </p>
-
-                    <a href="historia.html" class="btn btn-principal">
-                        Ver história
-                    </a>
-
-                </div>
-
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <img
+                src="imagens/hoquei.jpg"
+                class="img-fluid"
+                alt="Hóquei no gelo"
+              />
             </div>
 
+            <div class="col-md-6">
+              <p class="subtitulo">SOBRE OS JOGOS</p>
+
+              <h2>Uma grande competição</h2>
+
+              <p>
+                Os Jogos Olímpicos de Inverno são uma grande competição
+                esportiva internacional que reúne atletas de vários países. Eles
+                disputam diferentes modalidades na neve e no gelo, representando
+                seus países e buscando conquistar medalhas. Além de celebrar o
+                esporte, os Jogos promovem a união, o respeito e a amizade entre
+                os povos.
+              </p>
+
+              <a href="historia.html" class="btn btn-principal">
+                Ver história
+              </a>
+            </div>
+          </div>
         </div>
+      </section>
+    </main>
 
-    </section>
+    <footer>
+      <p>Olimpíadas de Inverno | Laís Monteiro</p>
+    </footer>
 
-</main>
-
-<footer>
-    <p>Olimpíadas de Inverno </p>
-</footer>
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-
-</body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
