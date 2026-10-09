@@ -1,0 +1,563 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f8fb;
+  color: #17324d;
+}
+
+.navbar {
+  background-color: #102f4a;
+  padding: 18px 0;
+}
+
+.navbar-brand {
+  font-family: "Playfair Display", serif;
+  font-size: 22px;
+}
+
+.nav-link {
+  margin-left: 15px;
+}
+
+.nav-link:hover {
+  color: #a9d7ee !important;
+}
+
+.banner {
+  background-color: #dceef7;
+  padding: 70px 0;
+}
+
+.banner h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+}
+
+.banner p {
+  line-height: 1.7;
+}
+
+.subtitulo {
+  color: #4b89a9;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.imagem-banner {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.btn-principal {
+  background-color: #286889;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+.btn-principal:hover {
+  background-color: #173f58;
+  color: white;
+}
+
+.destaques {
+  padding: 70px 0;
+}
+
+.destaques h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(23, 50, 77, 0.1);
+  height: 100%;
+}
+
+.card img {
+  height: 220px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 25px;
+}
+
+.card h2,
+.card h3 {
+  font-family: "Playfair Display", serif;
+}
+
+.card p {
+  color: #5d6d78;
+  line-height: 1.6;
+}
+
+.card a {
+  color: #286889;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.sobre {
+  background-color: white;
+  padding: 70px 0;
+}
+
+.sobre img {
+  width: 100%;
+  height: 330px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.sobre h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 38px;
+}
+
+.titulo-pagina {
+  background-color: #dceef7;
+  padding: 55px 0;
+}
+
+.titulo-pagina h1 {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+}
+
+.pagina-conteudo {
+  padding: 60px 0;
+}
+
+.imagem-historia {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.ano {
+  color: #286889;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #102f4a;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
+
+/* CARDS DE CURIOSIDADES */
+
+.curiosidades-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+  padding: 0 20px;
+}
+
+.curiosidades-container .card {
+  width: 100%;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 992px) {
+  .curiosidades-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .banner h1 {
+    font-size: 40px;
+  }
+
+  .imagem-banner {
+    margin-top: 30px;
+  }
+
+  .nav-link {
+    margin-left: 0;
+  }
+
+  .curiosidades-container {
+    grid-template-columns: 1fr;
+  }
+}
+.tabela-curiosidades {
+  padding: 60px 0;
+  background-color: white;
+}
+
+.tabela-curiosidades h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+  color: #17324d;
+}
+
+.tabela-curiosidades table {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #f4f8fb;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.tabela-curiosidades th {
+  background-color: #102f4a;
+  color: white;
+  padding: 18px;
+  text-align: left;
+}
+
+.tabela-curiosidades td {
+  padding: 18px;
+  color: #5d6d78;
+  border-bottom: 1px solid #dceef7;
+  line-height: 1.5;
+}
+
+.tabela-curiosidades tr:hover {
+  background-color: #dceef7;
+}
+/* Formulário */
+
+.formulario-conteudo {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.formulario-caixa {
+    background-color: white;
+    max-width: 700px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(23, 50, 77, 0.10);
+}
+
+.formulario-caixa h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+.form-control,
+.form-select {
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.mensagem-sucesso {
+    color: #187548;
+    font-weight: bold;
+}
+
+.mensagem-erro {
+    color: #b42318;
+    font-weight: bold;
+}
+
+/* Modo escuro */
+
+body.tema-escuro {
+    background-color: #17232e;
+    color: #f4f8fb;
+}
+
+.tema-escuro .banner,
+.tema-escuro .titulo-pagina {
+    background-color: #263d50;
+}
+
+/* Quadro de medalhas */
+.medalhas-secao {
+    padding: 60px 0;
+    background-color: #eaf4f9;
+}
+
+.medalhas-secao h2,
+.curiosidade-interativa h2,
+.secao-cartoes-curiosidades h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 35px;
+}
+
+.tabela-medalhas {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(23, 50, 77, 0.10);
+}
+
+.tabela-medalhas table {
+    margin-bottom: 0;
+    text-align: center;
+}
+
+.tabela-medalhas thead th {
+    background-color: #102f4a;
+    color: white;
+    padding: 17px 12px;
+    white-space: nowrap;
+}
+
+.tabela-medalhas tbody td {
+    padding: 15px 12px;
+    color: #17324d;
+}
+
+.nota-medalhas {
+    margin-top: 15px;
+    font-size: 12px;
+    color: #5d6d78;
+}
+
+
+.curiosidade-interativa {
+    max-width: 800px;
+    margin: auto;
+    padding: 40px 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(23, 50, 77, 0.10);
+}
+
+.curiosidade-interativa > p:not(.subtitulo) {
+    line-height: 1.8;
+}
+
+.texto-curiosidade {
+    min-height: 75px;
+    padding: 20px;
+    background-color: #dceef7;
+    color: #17324d;
+    border-radius: 10px;
+    line-height: 1.8;
+    font-weight: 600;
+}
+
+.secao-cartoes-curiosidades {
+    padding: 10px 0 70px;
+}
+
+.secao-cartoes-curiosidades .card {
+    height: 100%;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.secao-cartoes-curiosidades .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(23, 50, 77, 0.15);
+}
+
+.tema-escuro .medalhas-secao {
+    background-color: #1d2c39;
+}
+
+.tema-escuro .tabela-medalhas {
+    background-color: #243442;
+}
+
+.tema-escuro .tabela-medalhas tbody td {
+    background-color: #243442;
+    color: #f4f8fb;
+}
+
+.tema-escuro .nota-medalhas {
+    color: #d3e0e9;
+}
+
+.tema-escuro .curiosidade-interativa {
+    background-color: #243442;
+    color: #f4f8fb;
+}
+
+.tema-escuro .texto-curiosidade {
+    background-color: #354e60;
+    color: #f4f8fb;
+}
+
+
+@media (max-width: 768px) {
+    .medalhas-secao h2,
+    .curiosidade-interativa h2,
+    .secao-cartoes-curiosidades h2 {
+        font-size: 29px;
+    }
+
+    .curiosidade-interativa {
+        padding: 25px 18px;
+    }
+
+    .tabela-medalhas {
+        font-size: 13px;
+    }
+
+    .tabela-medalhas thead th,
+    .tabela-medalhas tbody td {
+        padding: 12px 9px;
+    }
+}
+.tema-escuro .sobre,
+.tema-escuro .card,
+.tema-escuro .formulario-caixa {
+    background-color: #243442;
+    color: #f4f8fb;
+}
+
+.tema-escuro .card p,
+.tema-escuro .formulario-caixa p {
+    color: #d3e0e9;
+}
+
+.tema-escuro .form-control,
+.tema-escuro .form-select {
+    background-color: #17232e;
+    color: white;
+    border-color: #61798a;
+}
+
+.tema-escuro .form-control::placeholder {
+    color: #d3e0e9;
+}
+
+.tema-escuro .sobre img {
+    border: 1px solid #61798a;
+}
+
+@media (max-width: 768px) {
+    .formulario-caixa {
+        padding: 22px;
+    }
+}
+.texto-idade {
+    display: block;
+    color: #4b89a9;
+    margin-top: 7px;
+    font-size: 13px;
+}
+
+#resposta-formulario {
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+.formulario-caixa textarea {
+    resize: vertical;
+}
+
+
+.quiz-conteudo {
+    padding-top: 50px;
+    padding-bottom: 60px;
+}
+
+.quiz-caixa {
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(23, 50, 77, 0.10);
+}
+
+.quiz-caixa h2 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 12px;
+}
+
+.pergunta-quiz {
+    border: 0;
+    border-bottom: 1px solid #dceef7;
+    padding: 20px 0;
+    margin-bottom: 15px;
+}
+
+.pergunta-quiz legend {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.opcao-quiz {
+    display: block;
+    background-color: #f4f8fb;
+    padding: 13px 15px;
+    margin-bottom: 9px;
+    border-radius: 9px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.opcao-quiz:hover {
+    background-color: #dceef7;
+}
+
+.opcao-quiz input {
+    margin-right: 8px;
+    accent-color: #286889;
+}
+
+.resultado-quiz {
+    background-color: #dceef7;
+    color: #17324d;
+    padding: 25px;
+    border-radius: 12px;
+    line-height: 1.7;
+}
+
+.resultado-quiz h3 {
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 12px;
+}
+
+.tema-escuro .quiz-caixa {
+    background-color: #243442;
+    color: #f4f8fb;
+}
+
+.tema-escuro .opcao-quiz {
+    background-color: #17232e;
+    color: #f4f8fb;
+}
+
+.tema-escuro .opcao-quiz:hover {
+    background-color: #354e60;
+}
+
+.tema-escuro .pergunta-quiz {
+    border-color: #61798a;
+}
+
+.tema-escuro .resultado-quiz {
+    background-color: #354e60;
+    color: #f4f8fb;
+}
+
+@media (max-width: 768px) {
+    .quiz-caixa {
+        padding: 22px;
+    }
+
+    .quiz-caixa .btn {
+        margin-bottom: 8px;
+    }
+}
