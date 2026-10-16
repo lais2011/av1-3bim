@@ -561,3 +561,497 @@ body.tema-escuro {
         margin-bottom: 8px;
     }
 }
+
+
+body.tema-escuro {
+    background-color: #17232e;
+    color: #f4f8fb;
+}
+
+.tema-escuro .sobre,
+.tema-escuro .card,
+.tema-escuro .formulario-caixa,
+.tema-escuro .quiz-caixa,
+.tema-escuro .curiosidade-interativa {
+    background-color: #243442;
+    color: #f4f8fb;
+}
+
+.tema-escuro .titulo-pagina,
+.tema-escuro .banner,
+.tema-escuro .medalhas-secao {
+    background-color: #263d50;
+    color: #f4f8fb;
+}
+
+.tema-escuro .card p,
+.tema-escuro .formulario-caixa p,
+.tema-escuro .quiz-caixa p {
+    color: #d3e0e9;
+}
+
+.tema-escuro .texto-curiosidade,
+.tema-escuro .resultado-quiz {
+    background-color: #354e60;
+    color: #f4f8fb;
+}
+
+.tema-escuro footer {
+    background-color: #102f4a;
+    color: #f4f8fb;
+}
+
+
+/* =====================================
+   ORCAMENTO - OLIMPIADAS DE INVERNO
+   ===================================== */
+
+.pagina-orcamento {
+    min-height: 100vh;
+}
+
+.orcamento-main {
+    width: 92%;
+    max-width: 1400px;
+    margin: 45px auto;
+    padding: 0;
+}
+
+.orcamento-intro {
+    max-width: 760px;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+
+.orcamento-etiqueta {
+    display: inline-block;
+    padding: 7px 15px;
+    margin-bottom: 15px;
+    border-radius: 30px;
+    background-color: #dceef7;
+    color: #173b5c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.orcamento-intro h2 {
+    margin-bottom: 12px;
+    font-family: "Playfair Display", serif;
+    font-size: 34px;
+    color: #17324d;
+}
+
+.orcamento-intro p {
+    max-width: 650px;
+    margin: 0 auto;
+    color: #526e82;
+    line-height: 1.8;
+}
+
+.orcamento-colunas {
+    display: grid;
+    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+    align-items: stretch;
+    gap: 28px;
+}
+
+/* CARD DO FORMULARIO */
+
+.orcamento-card {
+    min-width: 0;
+    padding: 32px;
+    background-color: white;
+    border: 1px solid #d6e5ef;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(23, 50, 77, 0.10);
+}
+
+.titulo-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.simbolo-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    background-color: #102f4a;
+    color: white;
+    border-radius: 13px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.titulo-card h3 {
+    margin: 0 0 5px;
+    font-family: "Playfair Display", serif;
+    color: #17324d;
+    font-size: 22px;
+}
+
+.titulo-card p {
+    margin: 0;
+    color: #637b8e;
+    font-size: 14px;
+}
+
+/* CAMPOS */
+
+#form-orcamento label {
+    display: block;
+    margin: 17px 0 7px;
+    color: #17324d;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#form-orcamento input {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #f4f8fb;
+    color: #17324d;
+    border: 1px solid #b8ccdc;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#form-orcamento input::placeholder {
+    color: #8297a8;
+}
+
+#form-orcamento input:focus {
+    outline: none;
+    border-color: #438fc4;
+    box-shadow: 0 0 0 3px rgba(67, 143, 196, 0.18);
+}
+
+/* BOTOES */
+
+#form-orcamento button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-top: 12px;
+    border-radius: 8px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#form-orcamento .botao-calcular {
+    margin-top: 25px;
+    background-color: #286889;
+    color: white;
+    border: 1px solid #286889;
+}
+
+#form-orcamento .botao-calcular:hover {
+    background-color: #173f58;
+    border-color: #173f58;
+    transform: translateY(-2px);
+}
+
+#form-orcamento .botao-limpar {
+    background-color: transparent;
+    color: #286889;
+    border: 1px solid #b8ccdc;
+}
+
+#form-orcamento .botao-limpar:hover {
+    background-color: #eaf4f9;
+}
+
+/* RESULTADO DO CALCULO */
+
+#resultado-orcamento {
+    display: none;
+    width: 100%;
+    margin: 22px 0 0;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+#resultado-orcamento.sucesso {
+    display: block;
+    background-color: #e3f5e8;
+    border: 1px solid #b9e2c5;
+    color: #175c2a;
+}
+
+#resultado-orcamento.erro {
+    display: block;
+    background-color: #fff0f0;
+    border: 1px solid #efc5c5;
+    color: #8b1717;
+}
+
+#resultado-orcamento hr {
+    border: 0;
+    border-top: 1px solid currentColor;
+    opacity: 0.3;
+    margin: 12px 0;
+}
+
+/* PAINEL LATERAL */
+
+.orcamento-lateral {
+    min-width: 0;
+    padding: 30px;
+    background: linear-gradient(145deg, #eaf4fa, #dcecf6);
+    border: 1px solid #cbdfea;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(23, 50, 77, 0.08);
+}
+
+.lateral-cabecalho {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-bottom: 22px;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #c7dce8;
+}
+
+.icone-neve {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 54px;
+    height: 54px;
+    background-color: #102f4a;
+    color: white;
+    border-radius: 14px;
+    font-size: 30px;
+}
+
+.lateral-cabecalho h3 {
+    margin: 0 0 5px;
+    color: #17324d;
+    font-family: "Playfair Display", serif;
+    font-size: 19px;
+}
+
+.lateral-cabecalho p {
+    margin: 0;
+    color: #637b8e;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* DICAS DE VIAGEM */
+
+.dica-viagem {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 19px 0;
+    border-bottom: 1px solid #cbdfea;
+}
+
+.numero-dica {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 39px;
+    height: 39px;
+    background-color: white;
+    color: #1769aa;
+    border: 1px solid #d3e5f0;
+    border-radius: 10px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.dica-viagem h4 {
+    margin: 0 0 6px;
+    color: #17324d;
+    font-size: 16px;
+}
+
+.dica-viagem p {
+    margin: 0;
+    color: #526e82;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* AVISO FINAL */
+
+.aviso-viagem {
+    margin-top: 22px;
+    padding: 19px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-left: 4px solid #438fc4;
+    border-radius: 9px;
+}
+
+.aviso-viagem h4 {
+    margin: 0 0 7px;
+    color: #17324d;
+    font-size: 15px;
+}
+
+.aviso-viagem p {
+    margin: 0;
+    color: #526e82;
+    font-size: 13px;
+    line-height: 1.7;
+}
+
+/* MODO ESCURO - SOMENTE ORCAMENTO */
+
+.tema-escuro .orcamento-intro h2 {
+    color: #f4f8fb;
+}
+
+.tema-escuro .orcamento-intro p {
+    color: #d3e0e9;
+}
+
+.tema-escuro .orcamento-etiqueta {
+    background-color: #263d50;
+    color: #dceef7;
+}
+
+.tema-escuro .orcamento-card {
+    background-color: #243442;
+    border-color: #354c5e;
+}
+
+.tema-escuro .titulo-card h3,
+.tema-escuro #form-orcamento label {
+    color: #f4f8fb;
+}
+
+.tema-escuro .titulo-card p {
+    color: #d3e0e9;
+}
+
+.tema-escuro #form-orcamento input {
+    background-color: #17232e;
+    color: white;
+    border-color: #61798a;
+}
+
+.tema-escuro #form-orcamento input::placeholder {
+    color: #d3e0e9;
+}
+
+.tema-escuro #form-orcamento .botao-limpar {
+    color: #dceef7;
+    border-color: #61798a;
+}
+
+.tema-escuro #form-orcamento .botao-limpar:hover {
+    background-color: #354e60;
+}
+
+.tema-escuro .orcamento-lateral {
+    background: linear-gradient(145deg, #1c2f3e, #223b4d);
+    border-color: #354c5e;
+}
+
+.tema-escuro .lateral-cabecalho {
+    border-color: #354c5e;
+}
+
+.tema-escuro .lateral-cabecalho h3,
+.tema-escuro .dica-viagem h4,
+.tema-escuro .aviso-viagem h4 {
+    color: #f4f8fb;
+}
+
+.tema-escuro .lateral-cabecalho p,
+.tema-escuro .dica-viagem p,
+.tema-escuro .aviso-viagem p {
+    color: #d3e0e9;
+}
+
+.tema-escuro .dica-viagem {
+    border-color: #354c5e;
+}
+
+.tema-escuro .numero-dica {
+    background-color: #314858;
+    border-color: #526b7c;
+    color: #b9e1ff;
+}
+
+.tema-escuro .aviso-viagem {
+    background-color: #263846;
+    border-left-color: #438fc4;
+}
+
+.tema-escuro #resultado-orcamento.sucesso {
+    background-color: #1b4930;
+    color: #c5f5d2;
+    border-color: #326b45;
+}
+
+.tema-escuro #resultado-orcamento.erro {
+    background-color: #4a2529;
+    color: #ffdede;
+    border-color: #784047;
+}
+
+/* CELULARES E TABLETS */
+
+@media (max-width: 850px) {
+    .orcamento-main {
+        width: 92%;
+        margin: 30px auto;
+    }
+
+    .orcamento-colunas {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .orcamento-intro h2 {
+        font-size: 28px;
+    }
+
+    .orcamento-card,
+    .orcamento-lateral {
+        padding: 23px;
+    }
+}
+
+@media (max-width: 480px) {
+    .orcamento-intro h2 {
+        font-size: 25px;
+    }
+
+    .orcamento-card,
+    .orcamento-lateral {
+        padding: 18px;
+    }
+
+    .titulo-card h3 {
+        font-size: 19px;
+    }
+
+    .lateral-cabecalho h3 {
+        font-size: 17px;
+    }
+}
